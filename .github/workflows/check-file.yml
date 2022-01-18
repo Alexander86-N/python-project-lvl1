@@ -19,4 +19,4 @@ jobs:
       - name: Run flake8
         run: flake8
       - name: Run make lint
-        run: make lint
+        run: poetry run flake8 brain_games
