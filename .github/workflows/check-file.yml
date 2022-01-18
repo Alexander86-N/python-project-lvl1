@@ -20,5 +20,3 @@ jobs:
         run: flake8
       - name: Run make lint
         run: make lint
-        run: |
-          make lint
