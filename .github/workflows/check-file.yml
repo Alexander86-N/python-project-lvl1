@@ -17,6 +17,6 @@ jobs:
           pip install poetry
           poetry add --dev flake8
       - name: Run flake8
-        run: flake8
+        run: flake8 .
       - name: Run make lint
         run: poetry run flake8 brain_games
