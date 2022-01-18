@@ -1,6 +1,8 @@
 name: check-file
 on: push
 jobs:
-runs-on: ubuntu-latest
-  steps:
-  - run: make lint 
+  my-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: make lint
