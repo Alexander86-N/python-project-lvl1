@@ -4,7 +4,7 @@ import prompt
 from random import randint
 
 
-def parity_check():
+def main():
     print("Welcom to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
@@ -34,4 +34,4 @@ Correct answer was 'no'.".format(answer))
 
 
 if __name__ == '__main__':
-    parity_check()
+    main()
