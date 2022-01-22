@@ -8,7 +8,7 @@ from brain_games.games import general_conditions
 name = general_conditions.greetings()
 
 
-def greatest_common_divisor():
+def work_with_progression():
     """Determining the missing number in an arithmetic progression"""
     print('What number is missing in the progression?')
     count = 0
@@ -32,4 +32,4 @@ def greatest_common_divisor():
 
 
 if __name__ == '__main__':
-    greatest_common_divisor()
+    work_with_progression()
