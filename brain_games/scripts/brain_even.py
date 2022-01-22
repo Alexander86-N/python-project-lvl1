@@ -2,12 +2,14 @@
 
 import prompt
 from random import randint
+from brain_games.games import general_conditions
+
+
+name = general_conditions.greetings()
 
 
 def main():
-    print("Welcom to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(name))
+    """Asks for an even or odd number."""
     print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
     while count != 3:
@@ -15,21 +17,11 @@ def main():
         print('Question:', num)
         answer = prompt.string('Your answer: ')
         if num % 2 == 0:
-            if answer.lower() == 'yes':
-                count += 1
-                print('Correct!')
-            else:
-                print("'{}' is wrong answer ;(.\
- Correct answer was 'yes'.".format(answer))
-                print("Let's try again, {}!".format(name))
-        if num % 2 != 0:
-            if answer.lower() == 'no':
-                count += 1
-                print('Correct!')
-            else:
-                print("'{}' is wrong answer ;(.\
-Correct answer was 'no'.".format(answer))
-                print("Let's try again, {}!".format(name))
+            result = 'yes'
+        else:
+            result = 'no'
+        check = general_conditions.conclusion(answer, result, name, count)
+        count += check
     print('Congratulations, {}!'.format(name))
 
 

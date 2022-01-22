@@ -1,5 +1,4 @@
 import prompt
-from random import randint
 
 
 def greetings():
@@ -10,8 +9,7 @@ def greetings():
     return name
 
 
-
-def derivation_of_conditions(answer, result, name, count):
+def conclusion(answer, result, name, count):
     """Returns the result of the condition."""
     check = 0
     if answer == result:
@@ -22,4 +20,3 @@ def derivation_of_conditions(answer, result, name, count):
 Correct answer was '{}'.".format(answer, result))
         print("Let's try again, {}!".format(name))
     return check
-
