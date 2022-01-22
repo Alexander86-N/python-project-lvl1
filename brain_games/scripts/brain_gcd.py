@@ -26,4 +26,4 @@ def greatest_common_divisor():
 
 
 if __name__ == '__main__':
-     greatest_common_divisor()
+    greatest_common_divisor()
