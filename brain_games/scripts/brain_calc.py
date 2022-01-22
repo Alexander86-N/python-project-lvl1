@@ -2,29 +2,26 @@
 
 import prompt
 from random import randint, choice
+from brain_games.games import general_conditions
 
 
-def main():
-    print("Welcom to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(name))
+name = general_conditions.greetings()
+def calculate():
+    """The user is shown a random mathematical expression that needs to be calculated\
+    and the correct answer written down."""
     print('What is the result of the expression?')
     count = 0
     while count != 3:
         num1 = str(randint(1, 25))
         num2 = str(randint(1, 25))
         sing = choice(['+', '-', '*'])
-        result = eval(num1 + sing + num2)
+        result = str(eval(num1 + sing + num2))
         print('Question:', num1, sing, num2)
         answer = prompt.string('Your answer: ')
-        if answwer == result:
-            count += 1
-            print('Correct!')
-        else:
-            print("'{}' is wrong answer ;(.Correct answer was '{}'.".format(answer, result))
-            print("Let's try again, {}!".format(name))
+        check = general_conditions.derivation_of_conditions(answer, result, name, count)
+        count += check
     print('Congratulations, {}!'.format(name))
 
 
 if __name__ == '__main__':
-    main()
+    calculate()
