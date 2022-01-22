@@ -15,8 +15,8 @@ def greatest_common_divisor():
     print('Find the greatest common divisor of given numbers.')
     count = 0
     while count != 3:
-        num1 = randint(1, 20)
-        num2 = randint(1, 20)
+        num1 = randint(2, 50)
+        num2 = randint(2, 50)
         result = str(gcd(num1, num2))
         print('Question:', num1, num2)
         answer = prompt.string('Your answer: ')
