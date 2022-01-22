@@ -13,7 +13,7 @@ def prime_number():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     count = 0
     while count != 3:
-        num = randint(2, 50)
+        num = randint(2, 15)
         result = ''
         for i in range(2, num // 2):
             if num % i == 0:
