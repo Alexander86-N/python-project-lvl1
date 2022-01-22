@@ -20,7 +20,7 @@ def prime_number():
                 result = 'no'
                 break
             else:
-                result  = 'yes'
+                result = 'yes'
         print('Question:', num)
         answer = prompt.string('Your answer: ')
         check = general_conditions.conclusion(answer, result, name, count)
