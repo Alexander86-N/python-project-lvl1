@@ -15,15 +15,16 @@ def work_with_progression():
     while count != 3:
         num1 = randint(1, 10)
         num2 = randint(1, 10)
-        idx = randint(0, 9)
+        num3 = randint(6, 10)
+        idx = randint(0, num3)
         my_list = []
-        my-list.append(num1)
-        for i in range(9):
+        my_list.append(str(num1))
+        for i in range(num3):
             num = num1 + num2
-            my_list.append(num)
+            my_list.append(str(num))
             num1 = num
         result = str(my_list[idx])
-        my_list[ind] = '..'
+        my_list[idx] = '..'
         print('Question:', ' '.join(my_list))
         answer = prompt.string('Your answer: ')
         check = general_conditions.conclusion(answer, result, name, count)
