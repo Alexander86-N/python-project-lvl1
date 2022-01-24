@@ -17,3 +17,7 @@
 [![asciicast](https://asciinema.org/a/2FeCwk7beMA1TYyhQLRPX83Nq.svg)](https://asciinema.org/a/2FeCwk7beMA1TYyhQLRPX83Nq)
 #### Game "Is it a prime number?"
 [![asciicast](https://asciinema.org/a/wtCgAfYXG5KPaNzt54UXCLuax.svg)](https://asciinema.org/a/wtCgAfYXG5KPaNzt54UXCLuax)
+
+# Installation
+
+`make package-install`
