@@ -1,29 +1,14 @@
 #!/usr/bin/env python
 
-import prompt
-from random import randint
-from brain_games.games import general_conditions
+
+from brain_games import general_logic
+from brain_games.games import even
 
 
-name = general_conditions.greetings()
-
-
-def main():
-    """Asks for an even or odd number."""
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    count = 0
-    while count != 3:
-        num = randint(1, 99)
-        print('Question:', num)
-        answer = prompt.string('Your answer: ')
-        if num % 2 == 0:
-            result = 'yes'
-        else:
-            result = 'no'
-        check = general_conditions.conclusion(answer, result, name, count)
-        count += check
-    print('Congratulations, {}!'.format(name))
+def check_for_even():
+    """Implements the game process of mini-games Check for Even."""
+    general_logic.common_engine(even)
 
 
 if __name__ == '__main__':
-    main()
+    check_for_even()

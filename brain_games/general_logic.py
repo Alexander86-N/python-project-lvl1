@@ -1,25 +1,28 @@
 import prompt
 
 
-def common_engine():
-    """Greeting and introduction to the player."""
+NUMBER_OF_ROUNDS = 3
+
+
+def common_engine(game):
+    """The main logic of the series of mini games."""
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
-    print(GAME_DESCRIPTION)
-    NUMBER_OF_ROUNDS = 3
+    print(game.GAME_DESCRIPTION)
+    check = 0
     while check != NUMBER_OF_ROUNDS:
-        print('Question:', definition_of_arguments())
+        number = game.definition_of_arguments()
+        result = game.correct_answer(number)
+        print('Question:', number)
         answer = prompt.string('Your answer: ')
-        result = correct_answer()
-        check = 0
         if answer == result:
             check += 1
             print('Correct!')
+            if check == 3:
+                print('Congratulations, {}!'.format(name))
         else:
             print("'{}' is wrong answer ;(.\
 Correct answer was '{}'.".format(answer, result))
             print("Let's try again, {}!".format(name))
             break
-        return check
-     print('Congratulations, {}!'.format(name))
