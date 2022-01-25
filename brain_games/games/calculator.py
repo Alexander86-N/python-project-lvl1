@@ -11,5 +11,5 @@ def definition_of_arguments():
 
 
 def correct_answer(number):
-    result = str(eval(number)))
+    result = str(eval(number))
     return result
