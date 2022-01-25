@@ -13,7 +13,7 @@ prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.scripts.brain_even:main"
+brain-even = "brain_games.scripts.brain_even:check_for_even"
 brain-calc = "brain_games.scripts.brain_calc:calculate"
 brain-gcd = "brain_games.scripts.brain_gcd: greatest_common_divisor"
 brain-progression = "brain_games.scripts.brain_progression:work_with_progression"
