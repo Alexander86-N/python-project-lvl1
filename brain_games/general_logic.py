@@ -1,0 +1,21 @@
+import prompt
+
+
+def common_engine():
+    """Greeting and introduction to the player."""
+    print("Welcome to the Brain Games!")
+    name = prompt.string('May I have your name? ')
+    print('Hello, {}!'.format(name))
+
+
+
+
+    check = 0
+    if answer == result:
+        check += 1
+        print('Correct!')
+    else:
+        print("'{}' is wrong answer ;(.\
+Correct answer was '{}'.".format(answer, result))
+        print("Let's try again, {}!".format(name))
+    return check
