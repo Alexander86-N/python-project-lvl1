@@ -1,6 +1,7 @@
 from random import randint
 
-GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_DESCRIPTION = 'Answer "yes" if given number is prime.\
+ Otherwise answer "no".'
 
 
 def definition_of_arguments():
@@ -11,7 +12,7 @@ def definition_of_arguments():
 
 def correct_answer(number):
     """Primality test."""
-    for i in ranga(2, number // 2):
+    for i in range(2, number // 2):
         if number % i == 0:
             result = 'no'
         else:
