@@ -8,7 +8,7 @@
  The project "Mind Games" is a series of mini-games to test attention and knowledge of mathematics
 
 #### Game "Even Check"
-[![asciicast](https://asciinema.org/a/bbG6kk0Mz8Qynnulg8tiRgSIT.svg)](https://asciinema.org/a/bbG6kk0Mz8Qynnulg8tiRgSIT)
+[![asciicast](https://asciinema.org/a/s9fR1buKVvNkHQm1gJ3HkfGDQ.svg)](https://asciinema.org/a/s9fR1buKVvNkHQm1gJ3HkfGDQ)
 #### Game "Calculator"
 [![asciicast](https://asciinema.org/a/4y3eiEI73173OHcq2FRIrrjqO.svg)](https://asciinema.org/a/4y3eiEI73173OHcq2FRIrrjqO)
 #### Game "NOD"
