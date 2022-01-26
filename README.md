@@ -16,7 +16,7 @@
 #### Game "Arithmetic progression"
 [![asciicast](https://asciinema.org/a/9zgVPxtL0tpYkxNfzu9dl29lj.svg)](https://asciinema.org/a/9zgVPxtL0tpYkxNfzu9dl29lj)
 #### Game "Is it a prime number?"
-[![asciicast](https://asciinema.org/a/wtCgAfYXG5KPaNzt54UXCLuax.svg)](https://asciinema.org/a/wtCgAfYXG5KPaNzt54UXCLuax)
+[![asciicast](https://asciinema.org/a/FZOaFsBVaW27Sk8H90TqslGu2.svg)](https://asciinema.org/a/FZOaFsBVaW27Sk8H90TqslGu2)
 
 # Installation
 
