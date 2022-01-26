@@ -10,7 +10,7 @@
 #### Game "Even Check"
 [![asciicast](https://asciinema.org/a/s9fR1buKVvNkHQm1gJ3HkfGDQ.svg)](https://asciinema.org/a/s9fR1buKVvNkHQm1gJ3HkfGDQ)
 #### Game "Calculator"
-[![asciicast](https://asciinema.org/a/4y3eiEI73173OHcq2FRIrrjqO.svg)](https://asciinema.org/a/4y3eiEI73173OHcq2FRIrrjqO)
+[![asciicast](https://asciinema.org/a/ucuU8rmFNK2shAPXQqPcYHtVh.svg)](https://asciinema.org/a/ucuU8rmFNK2shAPXQqPcYHtVh)
 #### Game "NOD"
 [![asciicast](https://asciinema.org/a/cn70HDAS4TcjdabXjbl1QImaO.svg)](https://asciinema.org/a/cn70HDAS4TcjdabXjbl1QImaO)
 #### Game "Arithmetic progression"
