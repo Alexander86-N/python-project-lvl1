@@ -6,7 +6,7 @@ GAME_DESCRIPTION = 'Answer "yes" if given number is prime.\
 
 def definition_of_arguments():
     """Picking a random number."""
-    num = randint(1, 25)
+    num = randint(2, 25)
     return num
 
 
