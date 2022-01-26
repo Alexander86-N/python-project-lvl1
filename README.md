@@ -12,7 +12,7 @@
 #### Game "Calculator"
 [![asciicast](https://asciinema.org/a/ucuU8rmFNK2shAPXQqPcYHtVh.svg)](https://asciinema.org/a/ucuU8rmFNK2shAPXQqPcYHtVh)
 #### Game "NOD"
-[![asciicast](https://asciinema.org/a/cn70HDAS4TcjdabXjbl1QImaO.svg)](https://asciinema.org/a/cn70HDAS4TcjdabXjbl1QImaO)
+[![asciicast](https://asciinema.org/a/rzGDxd7BszFR0MKGErtY1xDYS.svg)](https://asciinema.org/a/rzGDxd7BszFR0MKGErtY1xDYS)
 #### Game "Arithmetic progression"
 [![asciicast](https://asciinema.org/a/2FeCwk7beMA1TYyhQLRPX83Nq.svg)](https://asciinema.org/a/2FeCwk7beMA1TYyhQLRPX83Nq)
 #### Game "Is it a prime number?"
