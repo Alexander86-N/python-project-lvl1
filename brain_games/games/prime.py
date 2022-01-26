@@ -13,7 +13,7 @@ def definition_of_arguments():
 def correct_answer(number):
     """Primality test."""
     result = ''
-    for i in range(1, number // 2):
+    for i in range(number):
         if number % i == 0:
             result = 'no'
             break
