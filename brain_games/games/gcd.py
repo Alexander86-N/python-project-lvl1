@@ -1,10 +1,9 @@
-from math import gcd
 from random import randint
 
 GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def definition_of_arguments():
+def generatec_arguments():
     """Selection of random numbers."""
     num1 = randint(2, 50)
     num2 = randint(2, 50)
@@ -14,5 +13,11 @@ def definition_of_arguments():
 def correct_answer(number):
     """Calculates the greatest common divisor of these numbers."""
     num = number.split()
-    result = str(gcd(int(num[0]), int(num[1])))
+    if int(num[0]) > int(num[1]):
+        maxi = int(num[0])
+    else:
+        maxi = int(num[1])
+    for i in range(1, maxi + 1):
+        if int(num[0]) % i == 0 and int(num[1]) % i == 0:
+            result = i
     return result
