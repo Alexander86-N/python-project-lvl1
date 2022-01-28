@@ -26,9 +26,9 @@ def calc(number1,number2,sing):
 
 def generate_question_and_answer():
      """Selection of random numbers and operations."""
-    num1 = str(randint(1, 25))
-    num2 = str(randint(1, 25))
+    num1 = randint(1, 25)
+    num2 = randint(1, 25)
     sing = choice([['+', add], ['-', sub], ['*', mul]])
     example = '{} {} {}'.format(num1, sing[0], num2)
-    result = calc(num1 ,num2, sing[1])
+    result = str(calc(num1 ,num2, sing[1]))
     return example, result
