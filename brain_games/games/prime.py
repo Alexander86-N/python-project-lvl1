@@ -8,11 +8,9 @@ def is_prime(number):
     """Primality test."""
     for i in range(2, number // 2 + 1):
         if number % i == 0:
-            result = False
-            break
+            return False
         else:
-            result = True
-    return result
+            return True
 
 
 def generate_question_and_answer():
