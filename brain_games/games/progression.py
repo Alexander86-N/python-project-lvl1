@@ -25,7 +25,7 @@ def search_answer(number, item):
 
 
 def generate_question_and_answer():
-     """Returns a variant of the question and the correct answer to it."""
+    """Returns a variant of the question and the correct answer to it."""
     a1 = randint(1, 25)
     d = randint(1, 25)
     length = randint(6, 10)
