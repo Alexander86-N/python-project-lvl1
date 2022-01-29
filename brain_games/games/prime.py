@@ -17,6 +17,6 @@ def is_prime(number):
 
 def generate_question_and_answer():
     """Returns a variant of the question and the correct answer to it."""
-    example = randint(2, 25)
+    example = randint(2, 10)
     result = 'yes' if is_prime(example) else 'no'
     return example, result
