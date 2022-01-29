@@ -13,7 +13,7 @@ def search_answer(number):
 
 
 def generate_question_and_answer():
-     """Returns a variant of the question and the correct answer to it."""
+    """Returns a variant of the question and the correct answer to it."""
     example = randint(1, 99)
     result = str(search_answer(example))
     return example, result
