@@ -11,14 +11,6 @@ def generate_progression(first_term, difference, length, replacement_index):
         numbs.append(str(first_term + i * difference))
     numbers[replacement_index] = '..'
     return ' '.join(numbers)
- #   return numbs
-
-
-#def definition_of_arguments():
- #   """Getting a string representation of a progression"""
- #   numbers = getting_a_progression(randint(2, 50), randint(2, 50))
- #   numbers[randint(1, 9)] = '..'
- #   return ' '.join(numbers)
 
 
 def correct_answer(number, item):
@@ -41,3 +33,4 @@ def generate_question_and_answer():
     example = generate_progression(a1, d, length, item)
     result = str(correct_answer(example, item))
     return example, result
+
