@@ -16,5 +16,5 @@ def generate_question_and_answer():
     num2 = randint(1, 25)
     sing = choice([['+', add], ['-', sub], ['*', mul]])
     example = '{} {} {}'.format(num1, sing[0], num2)
-    result = str(calc(num1 , num2, sing[1]))
+    result = str(calc(num1, num2, sing[1]))
     return example, result
