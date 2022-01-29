@@ -13,7 +13,7 @@ def generate_progression(first_term, difference, length, replacement_index):
     return ' '.join(numbers)
 
 
-def correct_answer(number, item):
+def search_answer(number, item):
     """Calculating the correct answer"""
     nums = number.split()
     if item >= 2:
@@ -31,6 +31,5 @@ def generate_question_and_answer():
     length = randint(6, 10)
     item = randint(1, length)
     example = generate_progression(a1, d, length, item)
-    result = str(correct_answer(example, item))
+    result = str(search_answer(example, item))
     return example, result
-
