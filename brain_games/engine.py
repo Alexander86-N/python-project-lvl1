@@ -10,19 +10,15 @@ def start(game):
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
     print(game.GAME_DESCRIPTION)
-    check = 0
-    while check != NUMBER_OF_ROUNDS:
-        number = game.definition_of_arguments()
-        result = game.correct_answer(number)
-        print('Question:', number)
+    for _ in range(NUMBER_OF_ROUNDS):
+        example, result = game.generate_question_and_answer()
+        print('Question:', example)
         answer = prompt.string('Your answer: ')
         if answer == result:
-            check += 1
             print('Correct!')
-            if check == 3:
-                print('Congratulations, {}!'.format(name))
         else:
             print("'{}' is wrong answer ;(.\
 Correct answer was '{}'.".format(answer, result))
             print("Let's try again, {}!".format(name))
-            break
+            return
+    print('Congratulations, {}!'.format(name))
