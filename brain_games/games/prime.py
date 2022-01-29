@@ -4,19 +4,18 @@ GAME_DESCRIPTION = 'Answer "yes" if given number is prime.\
  Otherwise answer "no".'
 
 
-def definition_of_arguments():
-    """Picking a random number."""
-    num = randint(2, 25)
-    return num
-
-
-def correct_answer(number):
+def is_prime(number):
     """Primality test."""
-    result = ''
     for i in range(2, number // 2 + 1):
         if number % i == 0:
-            result = 'no'
-            break
+            result = False
         else:
-            result = 'yes'
+            result = True
     return result
+
+
+def generate_question_and_answer():
+     """Returns a variant of the question and the correct answer to it."""
+    example = randint(2, 25)
+    result = 'yes' if is_prime(example) else 'no'
+    return example, result
