@@ -11,7 +11,7 @@ def calc(number1, number2, sing):
 
 
 def generate_question_and_answer():
-     """Selection of random numbers and operations."""
+    """Selection of random numbers and operations."""
     num1 = randint(1, 25)
     num2 = randint(1, 25)
     sing = choice([['+', add], ['-', sub], ['*', mul]])
