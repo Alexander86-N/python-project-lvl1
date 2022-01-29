@@ -13,7 +13,7 @@ def search_answer(number1, number2):
 
 
 def generate_question_and_answer():
-     """Selection of random numbers."""
+    """Returns a variant of the question and the correct answer to it."""
     num1 = randint(1, 50)
     num2 = randint(1, 50)
     example = '{} {}'.format(num1, num2)
