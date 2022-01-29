@@ -17,5 +17,5 @@ def generate_question_and_answer():
     num1 = randint(1, 50)
     num2 = randint(1, 50)
     example = '{} {}'.format(num1, num2)
-    result = search_answer(num1 ,num2)
+    result = search_answer(num1, num2)
     return example, result
