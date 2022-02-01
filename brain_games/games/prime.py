@@ -6,10 +6,13 @@ GAME_DESCRIPTION = 'Answer "yes" if given number is prime.\
 
 def is_prime(number):
     """Primality test."""
-    for i in range(2, number // 2 + 1):
-        if number % i == 0 or number == 0 or number == 1:
-            return False
-        return True
+    if number > 1:
+        for i in range(2, number // 2 + 1):
+            if number % i == 0:
+                return False
+            return True
+    else:
+        return False
 
 
 def generate_question_and_answer():
