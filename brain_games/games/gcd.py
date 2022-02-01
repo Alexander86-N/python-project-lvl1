@@ -8,7 +8,8 @@ def calc_gcd(number1, number2):
     maxi = max(number1, number2)
     for num in range(1, maxi + 1):
         if number1 % num == 0 and number2 % num == 0:
-            return num
+            result = num
+    return result
 
 
 def generate_question_and_answer():
