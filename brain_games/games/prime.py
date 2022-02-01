@@ -7,7 +7,7 @@ GAME_DESCRIPTION = 'Answer "yes" if given number is prime.\
 def is_prime(number):
     """Primality test."""
     for i in range(2, number // 2 + 1):
-        if number % i == 0 and number != 1 and number != 0:
+        if number % i == 0 and number != 1 and number == 0:
             return False
     return True
 
