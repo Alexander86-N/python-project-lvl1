@@ -5,7 +5,6 @@ GAME_DESCRIPTION = 'What number is missing in the progression?'
 
 def generate_progression(first_term, difference, length):
     """Computing members of a progression"""
-    """Getting a string representation of a progression"""
     numbers = []
     for i in range(length):
         numbers.append(str(first_term + i * difference))
