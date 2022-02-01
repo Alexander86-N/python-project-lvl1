@@ -9,7 +9,7 @@ def is_prime(number):
     for i in range(2, number // 2 + 1):
         if number % i == 0 or number == 0 or number == 1:
             return False
-    return True
+        return True
 
 
 def generate_question_and_answer():
