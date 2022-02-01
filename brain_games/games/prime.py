@@ -6,18 +6,15 @@ GAME_DESCRIPTION = 'Answer "yes" if given number is prime.\
 
 def is_prime(number):
     """Primality test."""
-    count = 0
     for i in range(2, number // 2 + 1):
-        if number % i == 0:
-            count += 1
-    if count <= 0:
-        return True
-    else:
-        return False
+        if number % i == 0 or number == 0 or number == 1:
+            return False
+        else:
+            return True
 
 
 def generate_question_and_answer():
     """Returns a variant of the question and the correct answer to it."""
-    example = randint(2, 10)
+    example = randint(0, 10)
     result = 'yes' if is_prime(example) else 'no'
     return example, result
