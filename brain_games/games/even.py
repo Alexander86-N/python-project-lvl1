@@ -3,17 +3,16 @@ from random import randint
 GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def search_answer(number):
+def is_even(number):
     """Checks if a number is even."""
     if number % 2 == 0:
-        result = 'yes'
+        return True
     else:
-        result = 'no'
-    return result
+        return False
 
 
 def generate_question_and_answer():
     """Returns a variant of the question and the correct answer to it."""
     example = randint(1, 99)
-    result = str(search_answer(example))
+    result = 'yes' if is_even(example) else 'no'
     return example, result
